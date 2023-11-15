@@ -1,0 +1,14 @@
+create table enu (
+ stdId integer primary key,
+ name text not null,
+ surname text not null,
+ age text not null
+);
+
+insert into enu values (1, 'Raikhan', 'Nurkhatova', '17');
+insert into enu values (2, 'Nazerke', 'Khalyk', '18');
+
+update enu
+set age=18
+where stdId=1;
+select * from enu;
